@@ -27,10 +27,11 @@ my %WriteMakefileArgs = (
     "strictures" => 2
   },
   "TEST_REQUIRES" => {
+    "Test::Fatal" => 0,
     "Test::Simple" => "0.96",
     "Test::WWW::Mechanize::PSGI" => "0.35"
   },
-  "VERSION" => "0.01",
+  "VERSION" => "0.02",
   "test" => {
     "TESTS" => "t/*.t"
   }
@@ -44,6 +45,7 @@ my %FallbackPrereqs = (
   "Moose" => 2,
   "MooseX::ClassAttribute" => "0.27",
   "Starch" => "0.01",
+  "Test::Fatal" => 0,
   "Test::Simple" => "0.96",
   "Test::WWW::Mechanize::PSGI" => "0.35",
   "Type::Tiny" => "1.000005",

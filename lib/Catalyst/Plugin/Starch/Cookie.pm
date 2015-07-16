@@ -1,5 +1,5 @@
 package Catalyst::Plugin::Starch::Cookie;
-$Catalyst::Plugin::Starch::Cookie::VERSION = '0.01';
+$Catalyst::Plugin::Starch::Cookie::VERSION = '0.02';
 =head1 NAME
 
 Catalyst::Plugin::Starch::Cookie - Track starch state in a cookie.

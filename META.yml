@@ -3,6 +3,7 @@ abstract: 'Catalyst session plugin via Starch.'
 author:
   - 'Aran Deltac <bluefeet@gmail.com>'
 build_requires:
+  Test::Fatal: '0'
   Test::Simple: '0.96'
   Test::WWW::Mechanize::PSGI: '0.35'
 configure_requires:
@@ -26,4 +27,4 @@ requires:
 resources:
   bugtracker: https://github.com/bluefeet/Catalyst-Plugin-Starch/issues
   repository: git://github.com/bluefeet/Catalyst-Plugin-Starch.git
-version: '0.01'
+version: '0.02'

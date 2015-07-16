@@ -1,5 +1,5 @@
 package Catalyst::Plugin::Starch;
-$Catalyst::Plugin::Starch::VERSION = '0.01';
+$Catalyst::Plugin::Starch::VERSION = '0.02';
 =head1 NAME
 
 Catalyst::Plugin::Starch - Catalyst session plugin via Starch.
@@ -423,7 +423,6 @@ sub finalize_session {
     return if !$c->_has_starch_state();
 
     $c->save_session();
-    $c->_clear_starch_state();
 
     return;
 }
