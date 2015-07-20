@@ -1,5 +1,5 @@
 package Catalyst::Plugin::Starch::Cookie;
-$Catalyst::Plugin::Starch::Cookie::VERSION = '0.02';
+$Catalyst::Plugin::Starch::Cookie::VERSION = '0.03';
 =head1 NAME
 
 Catalyst::Plugin::Starch::Cookie - Track starch state in a cookie.
@@ -87,9 +87,14 @@ sub get_session_cookie {
 
 after prepare_cookies => sub{
     my ($c) = @_;
+
     my $cookie = $c->get_session_cookie();
     return if !$cookie;
-    $c->_set_sessionid( $cookie->value() );
+
+    my $id = $cookie->value();
+    return if !$c->starch->state_id_type->check( $id );
+
+    $c->_set_sessionid( $id );
     return;
 };
 

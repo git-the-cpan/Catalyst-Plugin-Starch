@@ -21,7 +21,7 @@ my %WriteMakefileArgs = (
     "Class::Method::Modifiers" => 2,
     "Moose" => 2,
     "MooseX::ClassAttribute" => "0.27",
-    "Starch" => "0.01",
+    "Starch" => "0.03",
     "Type::Tiny" => "1.000005",
     "namespace::clean" => "0.24",
     "strictures" => 2
@@ -31,7 +31,7 @@ my %WriteMakefileArgs = (
     "Test::Simple" => "0.96",
     "Test::WWW::Mechanize::PSGI" => "0.35"
   },
-  "VERSION" => "0.02",
+  "VERSION" => "0.03",
   "test" => {
     "TESTS" => "t/*.t"
   }
@@ -44,7 +44,7 @@ my %FallbackPrereqs = (
   "ExtUtils::MakeMaker" => 0,
   "Moose" => 2,
   "MooseX::ClassAttribute" => "0.27",
-  "Starch" => "0.01",
+  "Starch" => "0.03",
   "Test::Fatal" => 0,
   "Test::Simple" => "0.96",
   "Test::WWW::Mechanize::PSGI" => "0.35",
